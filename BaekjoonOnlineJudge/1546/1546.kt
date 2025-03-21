@@ -7,8 +7,8 @@ fun main(args: Array<String>) {
 
     for (i in 0 until cnt){
         var temp: Double = arr.get(i).toDouble() / max * 100
-        sum += temp
+        sum += temp / cnt
     }
 
-    println(sum / cnt)
+    println(sum)
 }
