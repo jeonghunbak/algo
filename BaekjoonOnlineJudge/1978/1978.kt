@@ -1,4 +1,4 @@
-un main(args: Array<String>) {
+fun main(args: Array<String>) {
     val cnt = readLine()!!.toInt()
     val arr = readLine()!!.split(" ").map { it.toInt() }
     var answer = 0;
