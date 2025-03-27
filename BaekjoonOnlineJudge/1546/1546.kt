@@ -3,7 +3,7 @@ fun main(args: Array<String>) {
     val inputNumber = readLine() ?: ""
     val arr = inputNumber.split(" ").map { it.toInt() }.toTypedArray()
     val max = arr.max()
-    var sum: Double = 0.0;
+    var sum: Double = 0.0
 
     for (i in 0 until cnt){
         var temp: Double = arr.get(i).toDouble() / max * 100
