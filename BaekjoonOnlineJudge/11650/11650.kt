@@ -9,7 +9,7 @@ fun main() {
         arr.add(Coordinate(input[0], input[1]))
     }
 
-    arr.sortWith(compareBy( { it.x }, { it.y } ))
+    arr.sortWith(compareBy({ it.x }, { it.y }))
 
     arr.forEach { println("${it.x} ${it.y}") }
 }
