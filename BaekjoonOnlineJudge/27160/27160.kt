@@ -1,21 +1,12 @@
 fun main() {
      val cnt = readln().toInt()
      val map = mutableMapOf<String, Int>()
-     var answer = "NO"
 
      repeat(cnt) {
           val (card, count) = readln().split(" ")
-          val value = (map.get(card) ?: 0) + count.toInt()
-
-          map.put(card, value)
+          map[card] = map.getOrDefault(card, 0) + count.toInt()
      }
 
-     for ((key, value) in map) {
-          if (value == 5) {
-               answer = "YES"
-               break
-          }
-     }
-     
-     print(answer)
+     val answer = if (map.values.any { it == 5 }) "YES" else "NO"
+     println(answer)
 }
