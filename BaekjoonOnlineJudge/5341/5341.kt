@@ -8,6 +8,6 @@ fun main(){
         repeat(input){ index ->
             answer += (input - index)
         }
-        print(answer)
+        println(answer)
     }
 }
