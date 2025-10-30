@@ -1,0 +1,15 @@
+fun main(){
+    val cnt = readln().toInt()
+    val list = readln().split(" ").map { it.toInt() }
+    var status = 0L
+    var totalSum = 0L
+    
+    for(i in list){
+        if(i == 0) status -= 1
+        else status += 1
+        
+        totalSum += status
+    }
+    
+    print(totalSum)
+}
